@@ -1,5 +1,6 @@
 /**
  * @author Leviathenn
+ * @note typescript is better
  */
 
 import * as fs from "fs"
