@@ -1,0 +1,8 @@
+name: "Example Task"
+
+tasks: 
+  - ./example/fizzbuzz.tdt
+runners: 
+  - ./example/runner1.tdr
+  - ./example/runner2.tdr
+  - ./example/runner3.tdr
