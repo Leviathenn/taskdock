@@ -3,6 +3,7 @@
  */
 
 import { parseConfig } from "./lib/configparser";
+import { runner } from "./lib/runner";
 const args = process.argv;
 function usage() {
     console.log(`
@@ -26,4 +27,7 @@ if(args.length < 2){
     usage();
 }else{
     parseConfig(".taskdock.yml")
+    var runnr = new runner();
+    runnr.prep();
+
 }
