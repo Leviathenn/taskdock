@@ -1,0 +1,4 @@
+configuration: "ubuntu-all"
+deleteTaskOnComplete: true
+logging: true
+taskDir: "/workspace:/$TASKNAME"

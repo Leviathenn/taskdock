@@ -2,10 +2,9 @@
  * @author Leviathenn
  */
 
-import { cpuUsage } from "process";
-
+import { parseConfig } from "./lib/configparser";
 const args = process.argv;
-function ysage() {
+function usage() {
     console.log(`
         ./taskdock <r[R]e[E]l[L][d][D][l][L]s[S]h[H]>
         
@@ -23,6 +22,8 @@ function ysage() {
             creates a reverse shell into the runner.
         `)
 }
-if(args.length > 2){
-    
+if(args.length < 2){
+    usage();
+}else{
+    parseConfig(".taskdock.yml")
 }

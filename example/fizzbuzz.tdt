@@ -1,0 +1,4 @@
+name: "FizzBuzz"
+projectFiles: "./Fizzbuzz"
+Lang: "node-njs"
+run: "index.js"
